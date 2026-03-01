@@ -1,0 +1,8 @@
+.contact-head {
+  margin-bottom: 22px;
+}
+
+.contact-box {
+  display: grid;
+  gap: 16px;
+}

@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.mock-small {
+  width: 260px;
+  height: 300px;
+  border-radius: 48px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.tab {
+  background: transparent;
+  border: 0;
+  padding: 6px 0;
+  font-weight: 800;
+  color: #666;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: #111;
+}
+
+.tab-active {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}

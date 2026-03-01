@@ -1,0 +1,140 @@
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 44px;
+  padding-top: 8px;
+}
+
+.home-hero-title {
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 64px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.home-hero-tagline {
+  margin: 12px 0 0;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.home-hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+/* bloco placeholder do print */
+.mock {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 48px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.mock-sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#dff1ff, #ffffff);
+}
+
+.mock-cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.mock-cloud-1 {
+  width: 170px;
+  height: 55px;
+  left: 50%;
+  top: 46px;
+  transform: translateX(-50%);
+}
+
+.mock-cloud-2 {
+  width: 80px;
+  height: 80px;
+  left: 28%;
+  top: 36px;
+}
+
+.mock-ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 46%;
+  background: #c9f08c;
+}
+
+.mock-hill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  background: rgba(107, 195, 65, 0.75);
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+}
+
+.mock-badge {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-weight: 700;
+  color: #444;
+}
+
+.home-contact-strip {
+  margin-top: 38px;
+  background: var(--violet);
+  border-radius: 16px;
+  padding: 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.home-contact-title {
+  font-weight: 800;
+}
+
+.home-contact-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.home-contact-links a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-contact-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+  .mock {
+    width: 280px;
+    height: 280px;
+  }
+}
