@@ -3,6 +3,8 @@ import { profile } from "../data/profile";
 import "../css/footer.css";
 
 export default function Footer() {
+  const API = import.meta.env.VITE_API_URL;
+
   return (
     <footer className="footer">
       <div className="container footer-inner">
@@ -13,7 +15,7 @@ export default function Footer() {
         <span className="muted">Feito com React</span>
 
         <a
-          href="http://127.0.0.1:8000/admin"
+          href={`${API}/admin/`}
           target="_blank"
           rel="noopener noreferrer"
           className="admin-link"
