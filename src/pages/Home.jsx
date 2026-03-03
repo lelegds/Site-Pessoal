@@ -5,7 +5,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <main className="page">
+    <main className="page home-page">
       <section className="container home-hero">
         <div className="home-hero-left">
           <h1 className="home-hero-title">{profile.name}</h1>
@@ -19,7 +19,9 @@ export default function Home() {
             <button
               className="btn btn-outline"
               type="button"
-              onClick={() => alert("Depois ligamos isso ao CV (upload/link) 🙂")}
+              onClick={() =>
+                alert("Depois ligamos isso ao CV (upload/link) 🙂")
+              }
             >
               Baixar CV
             </button>

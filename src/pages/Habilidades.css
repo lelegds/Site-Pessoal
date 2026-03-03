@@ -2,6 +2,39 @@
   margin-bottom: 22px;
 }
 
+/* grid container for category cards */
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.skill-card {
+  /* most of the card look comes from global .card class */
+  padding: 24px;
+  border-radius: 24px; /* slightly larger radius for softer corners */
+}
+
+.skill-card-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* override chip appearance inside skill cards for a more minimalist look */
+.skill-card .chip {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: #333;
+  transition: background 0.2s;
+}
+
+.skill-card .chip:hover {
+  background: #fafafa;
+}
+
 .skills-row {
   margin-top: 0;
 }
