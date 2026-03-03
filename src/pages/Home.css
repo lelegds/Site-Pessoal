@@ -4,6 +4,8 @@
   align-items: center;
   gap: 44px;
   padding-top: 8px;
+  /* grow to fill vertical space when parent is a column flex */
+  flex: 1;
 }
 
 .home-hero-title {

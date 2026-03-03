@@ -28,7 +28,18 @@ a { color: inherit; }
   margin: 0 auto;
 }
 
+/* make the outer app a column flex so footer can stick to bottom */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* pages grow to fill remaining space; keep existing padding */
 .page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 48px 0 72px;
 }
 
@@ -135,8 +146,17 @@ a { color: inherit; }
 
 .card-media {
   aspect-ratio: 16 / 10;
-  background: #e9e9e9;
-  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ede9fe, #dbeafe);
+}
+
+.card-placeholder {
+  font-size: 42px;
+  font-weight: 800;
+  color: #121212;
 }
 
 .card-media img {

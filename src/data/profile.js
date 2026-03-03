@@ -1,7 +1,7 @@
 export const profile = {
-  name: "SEU NOME",
+  name: "HELENA DUARTE",
   tagline: "Engenharia · Tecnologia · Inovação",
-  email: "seuemail@exemplo.com",
-  linkedin: "https://www.linkedin.com/in/seuusuario",
-  github: "https://github.com/seuusuario",
+  email: "helena.dsantos@einstein.edu.br",
+  linkedin: "https://www.linkedin.com/in/helena-gomes-duarte-santos-062388282/",
+  github: "https://github.com/lelegds",
 };
