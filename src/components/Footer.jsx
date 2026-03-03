@@ -3,7 +3,7 @@ import { profile } from "../data/profile";
 import "../css/footer.css";
 
 export default function Footer() {
-  const API = import.meta.env.VITE_API_URL;
+  const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
   return (
     <footer className="footer">
