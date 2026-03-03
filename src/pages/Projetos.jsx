@@ -10,7 +10,9 @@ export default function Projetos() {
   useEffect(() => {
     async function loadProjects() {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/projects/");
+        const API = import.meta.env.VITE_API_URL;
+
+        const res = await fetch(`${API}/api/projects/`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
